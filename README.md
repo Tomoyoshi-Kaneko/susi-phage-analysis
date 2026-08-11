@@ -89,6 +89,33 @@ Both `process_phage_data_v20()` and `diagnose_all_mois_enhanced()` support three
 - `"individual_wells"` — every well analyzed independently, no averaging
 - `"overall_mean"` — single mean curve across all wells of a condition
 
+## Key parameters
+
+`process_phage_data_v20()` and `diagnose_all_mois_enhanced()` share the parameters below, which control t0/ti/tc detection and therefore the calculated index values (these are the values reported for the paper; see the "Quick start" chunks in `susi_analysis.Rmd` for the exact settings used for each dataset).
+
+| Parameter | Default | Meaning |
+|---|---|---|
+| `t0_detection` | `"auto"` | Detection mode for lysis onset (t0) |
+| `t0_min_time` | `0.25` | Earliest time (h) t0 is allowed to be detected |
+| `t0_sustainability` | `5.0` | How many hours of sustained decline are required to confirm t0 |
+| `n_forward_points_t0` | `5` | Number of forward time points checked when confirming t0 |
+| `threshold_percentage_t0` | `0.6` | Fraction of forward points that must be lower to confirm t0 |
+| `n_forward_points_ti` | `5` | Number of forward time points checked when confirming ti (resistance emergence) |
+| `threshold_percentage_ti` | `0.6` | Fraction of forward points that must be higher to confirm ti |
+| `min_increase_threshold` | `0.05` | Minimum OD increase used to detect the start of regrowth (ti) |
+| `min_lysis_time` | `2.0` | Minimum duration (h) required between t0 and ti |
+| `tc_slope_threshold` | `0.03` | Slope threshold used to detect when the control reaches stationary phase (tc) |
+| `tc_min_time` | `1.0` | Earliest time (h) tc is allowed to be detected — raise this for a long flat lag phase (see note below) |
+| `vi_min_time` | `1.0` | Same idea as `tc_min_time`, but for the VI integration window |
+| `time_limit_hours` | `NULL` | Upper time limit (h) for all calculations; `NULL` = use the full time course |
+
+Plot-appearance-only arguments (`title_size`, `axis_text_size`, `legend_text_size`, `show_legend`, `show_title`, the various `*_ylim` ranges, etc.) change how figures look but do not affect any calculated value. For the complete, always-up-to-date argument list, run this in R after loading the functions:
+
+```r
+args(process_phage_data_v20)
+formals(process_phage_data_v20)   # same, but shows default values too
+```
+
 ## A note on parameter tuning (tc_min_time / vi_min_time)
 
 If a control (phage-free) culture has a long, nearly flat lag phase, the automatic tc/VI-window detection can lock onto that flat region and report a falsely early tc (and a VI close to 0). If you see this, increase `tc_min_time` (and `vi_min_time` for VI) so the search window starts later — e.g. `tc_min_time = 2.0`.
@@ -109,7 +136,7 @@ Diagnostic plot colors: **green** = SusI calculated successfully, **red** = t0 d
 
 ## Citation
 
-If you use this code, please cite the associated manuscript (citation to be added on publication — see `CITATION.cff`, and check back here for a preprint/DOI link).
+If you use this code, please cite the associated manuscript (citation to be added on publication — see `CITATION.cff`, and check back here for a preprint/DOI link). A citable DOI for this repository itself is also planned via Zenodo.
 
 ## License
 
