@@ -1,0 +1,8 @@
+condition,SusI,SusI_SE,day7_survival_percent,source_experiment
+T6 + PhiWec461,2.776,0.79,100,experiment_2
+T6 + PhiWec464,2.187,0.066,60,experiment_2
+PhiWec430 + PhiWec464,1.504,0.306,60,experiment_2
+PhiWec430 + PhiWec461,1.272,0.237,80,experiment_2
+PhiWec430,0.101,0.028,40,experiment_2
+PhiWec461,0.291,0.032,0,experiment_1
+T6,0.351,0.008,0,experiment_1

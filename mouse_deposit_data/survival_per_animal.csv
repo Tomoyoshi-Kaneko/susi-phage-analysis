@@ -1,0 +1,61 @@
+experiment,group,animal_id,time_days,event
+experiment_1,Untreated (1x PBS),01,1,1
+experiment_1,Untreated (1x PBS),02,1,1
+experiment_1,Untreated (1x PBS),03,1,1
+experiment_1,Untreated (1x PBS),04,1,1
+experiment_1,Untreated (1x PBS),05,1,1
+experiment_1,Meropenem 30 mg/kg,01,7,0
+experiment_1,Meropenem 30 mg/kg,02,7,0
+experiment_1,Meropenem 30 mg/kg,03,7,0
+experiment_1,Meropenem 30 mg/kg,04,7,0
+experiment_1,Meropenem 30 mg/kg,05,7,0
+experiment_1,T6,01,1,1
+experiment_1,T6,02,1,1
+experiment_1,T6,03,1,1
+experiment_1,T6,04,1,1
+experiment_1,T6,05,2,1
+experiment_1,PhiWec461,01,1,1
+experiment_1,PhiWec461,02,1,1
+experiment_1,PhiWec461,03,1,1
+experiment_1,PhiWec461,04,1,1
+experiment_1,PhiWec461,05,1,1
+experiment_1,T6 + PhiWec461,01,7,0
+experiment_1,T6 + PhiWec461,02,7,0
+experiment_1,T6 + PhiWec461,03,7,0
+experiment_1,T6 + PhiWec461,04,7,0
+experiment_1,T6 + PhiWec461,05,7,0
+experiment_2,Untreated (1x PBS),01,1,1
+experiment_2,Untreated (1x PBS),02,1,1
+experiment_2,Untreated (1x PBS),03,1,1
+experiment_2,Untreated (1x PBS),04,1,1
+experiment_2,Untreated (1x PBS),05,1,1
+experiment_2,Meropenem 30 mg/kg,01,7,0
+experiment_2,Meropenem 30 mg/kg,02,7,0
+experiment_2,Meropenem 30 mg/kg,03,7,0
+experiment_2,Meropenem 30 mg/kg,04,7,0
+experiment_2,Meropenem 30 mg/kg,05,7,0
+experiment_2,T6 + PhiWec461,01,7,0
+experiment_2,T6 + PhiWec461,02,7,0
+experiment_2,T6 + PhiWec461,03,7,0
+experiment_2,T6 + PhiWec461,04,7,0
+experiment_2,T6 + PhiWec461,05,7,0
+experiment_2,T6 + PhiWec464,01,1,1
+experiment_2,T6 + PhiWec464,02,3,1
+experiment_2,T6 + PhiWec464,03,7,0
+experiment_2,T6 + PhiWec464,04,7,0
+experiment_2,T6 + PhiWec464,05,7,0
+experiment_2,PhiWec430 + PhiWec464,01,1,1
+experiment_2,PhiWec430 + PhiWec464,02,1,1
+experiment_2,PhiWec430 + PhiWec464,03,7,0
+experiment_2,PhiWec430 + PhiWec464,04,7,0
+experiment_2,PhiWec430 + PhiWec464,05,7,0
+experiment_2,PhiWec430 + PhiWec461,01,1,1
+experiment_2,PhiWec430 + PhiWec461,02,7,0
+experiment_2,PhiWec430 + PhiWec461,03,7,0
+experiment_2,PhiWec430 + PhiWec461,04,7,0
+experiment_2,PhiWec430 + PhiWec461,05,7,0
+experiment_2,PhiWec430,01,1,1
+experiment_2,PhiWec430,02,1,1
+experiment_2,PhiWec430,03,1,1
+experiment_2,PhiWec430,04,7,0
+experiment_2,PhiWec430,05,7,0

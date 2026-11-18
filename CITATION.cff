@@ -1,0 +1,29 @@
+# This file lets GitHub show a "Cite this repository" button.
+# Fill in the preferred-citation section once the manuscript has a DOI
+# (preprint or published version), then update the authors list to match
+# the paper's final author order.
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "SusI: Sustainability Index for Phage Lysis Kinetics (analysis code)"
+authors:
+  - family-names: Kaneko
+    given-names: Tomoyoshi
+    affiliation: "Waseda University"
+repository-code: "https://github.com/<your-username>/<your-repo-name>"
+license: MIT
+version: 1.0.0
+date-released: "2026-08-11"
+
+# Uncomment and fill in once the manuscript is available:
+# preferred-citation:
+#   type: article
+#   title: "TITLE OF THE PAPER"
+#   authors:
+#     - family-names: Kaneko
+#       given-names: Tomoyoshi
+#     - family-names: Tanaka
+#       given-names: Daiki
+#     # ... add remaining co-authors in final author order
+#   journal: "Antimicrobial Agents and Chemotherapy"
+#   year: 2026
+#   doi: "10.xxxx/xxxxx"
